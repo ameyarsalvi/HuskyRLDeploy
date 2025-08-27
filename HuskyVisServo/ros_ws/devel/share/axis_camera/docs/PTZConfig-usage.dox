@@ -1,0 +1,12 @@
+\subsubsection usage Usage
+\verbatim
+<node name="axis_camera" pkg="axis_camera" type="axis_camera">
+  <param name="autofocus" type="bool" value="True" />
+  <param name="pan" type="double" value="0.0" />
+  <param name="tilt" type="double" value="-45.0" />
+  <param name="zoom" type="double" value="1.0" />
+  <param name="focus" type="double" value="1.0" />
+  <param name="brightness" type="double" value="1.0" />
+</node>
+\endverbatim
+

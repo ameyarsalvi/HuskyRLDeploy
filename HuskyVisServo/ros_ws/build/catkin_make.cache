@@ -1,0 +1,2 @@
+axis_camera:husky_LF
+-DCATKIN_DEVEL_PREFIX=/home/HuskyVisServo/ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/HuskyVisServo/ros_ws/install -G Unix Makefiles

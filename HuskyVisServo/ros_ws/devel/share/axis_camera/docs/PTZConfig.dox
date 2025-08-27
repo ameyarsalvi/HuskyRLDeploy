@@ -1,0 +1,11 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~autofocus" : \b [bool] Autofocus min: False, default: True, max: True
+- \b "~pan" : \b [double] Pan value in degrees (or percent in absolute mode) min: -180.0, default: 0.0, max: 180.0
+- \b "~tilt" : \b [double] Tilt value in degrees (or percent in absolute mode) min: -90.0, default: -45.0, max: 0.0
+- \b "~zoom" : \b [double] Zoom value min: 1.0, default: 1.0, max: 9999.0
+- \b "~focus" : \b [double] Focus min: 1.0, default: 1.0, max: 9999.0
+- \b "~brightness" : \b [double] Brightness min: 1.0, default: 1.0, max: 9999.0
+
