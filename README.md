@@ -22,7 +22,7 @@ Please ensure the NVIDIA container toolkit is installed on your Ubuntu computer 
 5. Run `python3 rl_clone_clahe.py` to deploy the policy on the Husky.
 
 
-### Docker container detials
+### Docker container details (incase someone wants to build it from scratch)
 The primary contents of the container inclued
 1. Slim ubuntu20 OS
 2. ROS Noetic (complete install)
@@ -30,6 +30,7 @@ The primary contents of the container inclued
 4. April tag packages.
 
 Most of the python packgages can be tracked and updated in the installed_packages.txt file found in HuskyVisServo directory.
+
 
 
 
