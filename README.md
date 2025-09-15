@@ -18,8 +18,19 @@ Please ensure the NVIDIA container toolkit is installed on your Ubuntu computer 
 >>>>>>script1.py
 >>>>>>script2.py
 3. In the directory '/HuskyVisServo' create a new directory '/trained_models'. Download one of the models (bslnCnst.zip) located at https://drive.google.com/drive/u/0/folders/1uKjiQakRyRJekMSZcmaSau9RZih8Us6l in that directory
-4. In the directory '/HuskyVSDocker/HuskyVisServo/ros_ws/src/husky_LF/src/' find the find 'rl_clone_clahe.py' and ensure path to the trained model is right.
-5. Run rl_clone_clahe.py with python based execution.
+4. In the directory '/HuskyVSDocker/HuskyVisServo/ros_ws/src/husky_LF/src/' find the find 'rl_clone_clahe.py' and ensure path to the trained model is right. This script gives example of running policies trained in stablebaselines3 on the Husky. Similar scripts (by following this script) can be now used to create deployment of machine learning policies.
+5. Run `python3 rl_clone_clahe.py` to deploy the policy on the Husky.
+
+
+### Docker container detials
+The primary contents of the container inclued
+1. Slim ubuntu20 OS
+2. ROS Noetic (complete install)
+3. Husky Complete packages available at (https://www.clearpathrobotics.com/assets/guides/kinetic/ros/Drive%20a%20Husky.html). These packages are critical as the build the necessary ROS message structure to parse the ROS data.
+4. April tag packages.
+
+Most of the python packgages can be tracked and updated in the requirements.txt file found at the highest level of the repository.
+
 
 
 
