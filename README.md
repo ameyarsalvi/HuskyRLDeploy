@@ -29,7 +29,8 @@ The primary contents of the container inclued
 3. Husky Complete packages available at (https://www.clearpathrobotics.com/assets/guides/kinetic/ros/Drive%20a%20Husky.html). These packages are critical as the build the necessary ROS message structure to parse the ROS data.
 4. April tag packages.
 
-Most of the python packgages can be tracked and updated in the requirements.txt file found at the highest level of the repository.
+Most of the python packgages can be tracked and updated in the installed_packages.txt file found in HuskyVisServo directory.
+
 
 
 
