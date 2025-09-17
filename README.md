@@ -8,6 +8,7 @@ On your local computer, create an empyt directroy. Withing the directory clone t
 3.  Build the docker file in the repositiory using `./docker_run.sh`. The command can take several minutes to execute as it will download and build the docker container. The container will persists as the shell script does not contain the 'delete container on exit' command. This is useful as the docker container is larger and does not make sense to build it on every use. After building the container for the first time, the container id can be found out be `docker ps -a` and used to run the container again with `docker start -i _tag_`.
 4. The first line of the shell script `$(pwd)/HuskyVisServo:/home/HuskyVisServo` mounts the path to your local 'HuskyVisServo' directory (that is part of the downloaded repository) to a '/home/HuskyVisServo' directory within the docker container. This is known as mounting and allows to exchange files between the host computer and the docker container without bloating the container size. Log output from the container and policies needed to run the python scripts can be added in this folder to exchange to and fro the container. This directory has also been configured as a ROS Workspace that allows to add ros/python scripts to control the Husky. It follows the standard ROS Workspace structure as :
 
+`
 ┌── HuskyVisServo
 |    ├── ros_ws
 |    ├── build
@@ -22,6 +23,7 @@ On your local computer, create an empyt directroy. Withing the directory clone t
 |                ├── script2.py
 |    ├── output_log_dir
 
+`
 
 3. In the directory '/HuskyVisServo' create a new directory '/trained_models'. Download one of the models (bslnCnst.zip) located at https://drive.google.com/drive/u/0/folders/1uKjiQakRyRJekMSZcmaSau9RZih8Us6l in that directory
 4. In the directory '/HuskyVSDocker/HuskyVisServo/ros_ws/src/husky_LF/src/' find the find 'rl_clone_clahe.py' and ensure path to the trained model is right. This script gives example of running policies trained in stablebaselines3 on the Husky. Similar scripts (by following this script) can be now used to create deployment of machine learning policies.
@@ -36,6 +38,7 @@ The primary contents of the container inclued
 4. April tag packages.
 
 Most of the python packgages can be tracked and updated in the installed_packages.txt file found in HuskyVisServo directory.
+
 
 
 
