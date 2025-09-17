@@ -11,23 +11,24 @@ On your local computer, create an empyt directroy. Withing the directory clone t
 ```
 ┌── HuskyVisServo (MAPPED DIRECTORY)
 |    ├── ros_ws
-|    ├── build
-|    ├── devel
-|    └──src
-|        ├── axis_camera (rospkg)
-|        └── husky_lf (rospkg)
-|            ├── CMakeLists.txt
-|            ├── package.xml
-|            └── src
-|                ├── script1.py
-|                └── script2.py
+|    | ├── build
+|    | ├── devel
+|    | └──src
+|    |     ├── axis_camera (rospkg)
+|    |     └── husky_lf (rospkg)
+|    |         ├── CMakeLists.txt
+|    |         ├── package.xml
+|    |         └── src
+|    |             ├── rl_clone_clahe.py
+|    |             └── lane_detector.py
+|    └── trained_models (to be created)
 ├── docker_run.sh
 └── README.md
 
 ```
 
 3. In the directory '/HuskyVisServo' create a new directory '/trained_models'. Download one of the models (bslnCnst.zip) located at https://drive.google.com/drive/u/0/folders/1uKjiQakRyRJekMSZcmaSau9RZih8Us6l in that directory
-4. In the directory '/HuskyVSDocker/HuskyVisServo/ros_ws/src/husky_LF/src/' find the find 'rl_clone_clahe.py' and ensure path to the trained model is right. This script gives example of running policies trained in stablebaselines3 on the Husky. Similar scripts (by following this script) can be now used to create deployment of machine learning policies.
+4. In the directory '/HuskyVSDocker/HuskyVisServo/ros_ws/src/husky_LF/src/' find the find 'rl_clone_clahe.py' and ensure path to the trained model is rightly updated in the script. Read the script to understand necessary dependenices and to understant the logic of how a trained policy is deployed on the robot. This script gives example of running policies trained in stablebaselines3 on the Husky. Similar scripts (by following this script) can be now used to create deployment of machine learning policies.
 5. Run `python3 rl_clone_clahe.py` to deploy the policy on the Husky.
 
 
@@ -39,6 +40,7 @@ The primary contents of the container inclued
 4. April tag packages.
 
 Most of the python packgages can be tracked and updated in the installed_packages.txt file found in HuskyVisServo directory.
+
 
 
 
