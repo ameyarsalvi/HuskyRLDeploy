@@ -19,7 +19,7 @@ On your local computer, create an empyt directroy. Withing the directory clone t
 |    |         ├── CMakeLists.txt
 |    |         ├── package.xml
 |    |         └── src
-|    |             ├── rl_clone_clahe.py
+|    |             ├── rl_cone_clahe.py
 |    |             └── lane_detector.py
 |    └── trained_models (to be created)
 ├── docker_run.sh
@@ -40,6 +40,7 @@ The primary contents of the container inclued
 4. April tag packages.
 
 Most of the python packgages can be tracked and updated in the installed_packages.txt file found in HuskyVisServo directory.
+
 
 
 
