@@ -13,15 +13,16 @@ On your local computer, create an empyt directroy. Withing the directory clone t
 |    ├── ros_ws
 |    ├── build
 |    ├── devel
-|    ├──src
+|    └──src
 |        ├── axis_camera (rospkg)
-|        ├── husky_lf (rospkg)
+|        └── husky_lf (rospkg)
 |            ├── CMakeLists.txt
 |            ├── package.xml
-|            ├── src
+|            └── src
 |                ├── script1.py
-|                ├── script2.py
-|    ├── output_log_dir
+|                └── script2.py
+├── docker_run.sh
+└── README.md
 
 ```
 
@@ -38,6 +39,7 @@ The primary contents of the container inclued
 4. April tag packages.
 
 Most of the python packgages can be tracked and updated in the installed_packages.txt file found in HuskyVisServo directory.
+
 
 
 
