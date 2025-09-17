@@ -9,7 +9,7 @@ On your local computer, create an empyt directroy. Withing the directory clone t
 4. The first line of the shell script `$(pwd)/HuskyVisServo:/home/HuskyVisServo` mounts the path to your local 'HuskyVisServo' directory (that is part of the downloaded repository) to a '/home/HuskyVisServo' directory within the docker container. This is known as mounting and allows to exchange files between the host computer and the docker container without bloating the container size. Log output from the container and policies needed to run the python scripts can be added in this folder to exchange to and fro the container. This directory has also been configured as a ROS Workspace that allows to add ros/python scripts to control the Husky. It follows the standard ROS Workspace structure as :
 
 ```
-┌── HuskyVisServo
+┌── HuskyVisServo (MAPPED DIRECTORY)
 |    ├── ros_ws
 |    ├── build
 |    ├── devel
@@ -39,6 +39,7 @@ The primary contents of the container inclued
 4. April tag packages.
 
 Most of the python packgages can be tracked and updated in the installed_packages.txt file found in HuskyVisServo directory.
+
 
 
 
